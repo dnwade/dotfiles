@@ -79,7 +79,19 @@ if executable('ag')
 endif
 
 " Color scheme
-colorscheme solarized
+" colorscheme solarized
+" colorscheme grb256
+" colorscheme clarity
+colorscheme desertEx
+" colorscheme jellybeans
+" colorscheme earendel
+" colorscheme moria
+" colorscheme tango-morning
+" colorscheme wombat
+" colorscheme xoria256
+" colorscheme railscasts
+" colorscheme twilight
+"
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
