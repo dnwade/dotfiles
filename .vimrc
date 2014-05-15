@@ -156,3 +156,9 @@ let g:syntastic_check_on_open=1
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+nnoremap <S-h> :tabfirst<CR>
+nnoremap <S-j> :tabprev<CR>
+nnoremap <S-k> :tabnext<CR>
+nnoremap <S-l> :tablast<CR>
+nnoremap <C-n> :tabnew<CR>
