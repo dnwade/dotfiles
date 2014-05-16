@@ -125,3 +125,5 @@
 [github]
 	user = pkumar
 	token = token
+[push]
+	default = matching
