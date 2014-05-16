@@ -126,4 +126,4 @@
 	user = pkumar
 	token = token
 [push]
-	default = matching
+	default = simple
