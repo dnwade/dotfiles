@@ -162,3 +162,12 @@ nnoremap <S-j> :tabprev<CR>
 nnoremap <S-k> :tabnext<CR>
 nnoremap <S-l> :tablast<CR>
 nnoremap <C-n> :tabnew<CR>
+
+" Taboo
+" -------------------------------------------------------------------------
+let g:taboo_tab_format = " #%N %f%m "
+let g:taboo_renamed_tab_format = " #%N [%f] "
+let g:taboo_modified_tab_flag = " *"
+set sessionoptions+=tabpages,globals
+" map <leader>ren :TabooRename
+nnore ,T :TabooRename<space>

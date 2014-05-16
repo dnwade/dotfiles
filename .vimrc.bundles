@@ -30,6 +30,7 @@ Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/tComment'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'gcmt/taboo.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
