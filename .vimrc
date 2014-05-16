@@ -176,3 +176,8 @@ let g:taboo_modified_tab_flag = " *"
 set sessionoptions+=tabpages,globals
 " map <leader>ren :TabooRename
 nnore ,T :TabooRename<space>
+
+"------------
+
+" Switch CWD to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
