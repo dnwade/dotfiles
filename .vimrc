@@ -157,11 +157,16 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
+" Tabs
 nnoremap <S-h> :tabfirst<CR>
 nnoremap <S-j> :tabprev<CR>
 nnoremap <S-k> :tabnext<CR>
 nnoremap <S-l> :tablast<CR>
 nnoremap <C-n> :tabnew<CR>
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " Taboo
 " -------------------------------------------------------------------------
