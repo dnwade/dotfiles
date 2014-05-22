@@ -82,9 +82,9 @@ endif
 " colorscheme solarized
 " colorscheme grb256
 " colorscheme clarity
-colorscheme desertEx
+" colorscheme desertEx
 " colorscheme jellybeans
-" colorscheme earendel
+colorscheme earendel
 " colorscheme moria
 " colorscheme tango-morning
 " colorscheme wombat
