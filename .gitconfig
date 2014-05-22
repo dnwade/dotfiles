@@ -105,8 +105,9 @@
 	#############
 	human = name-rev --name-only --refs=refs/heads/*
 [color]
+  ui = true
   # ui = true
-  ui = auto # covers diff = true, status = auto, branch = auto
+  #ui = auto # covers diff = true, status = auto, branch = auto
   interactive = auto
 [color "branch"]
 	current = yellow bold
@@ -116,7 +117,7 @@
 	meta = yellow bold
 	frag = magenta bold
 	old = red bold
-	new = green bold
+	new = black green reverse
 	whitespace = red reverse
 [color "status"]
 	added = yellow
