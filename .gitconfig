@@ -9,6 +9,8 @@
 [rerere]
 	enabled = 1
 	autoupdate = 1
+[grep]
+  linenumber = true
 [alias]
 	s = status
   st = status
