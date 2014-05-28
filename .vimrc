@@ -66,6 +66,8 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+let mapleader=","
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
