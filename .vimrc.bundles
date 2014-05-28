@@ -35,6 +35,8 @@ Plugin 'gcmt/taboo.vim'
 " no vim-indent-guides --> doesn't work. manually copy them in
 " Plugin 'nathanaelkane/vim-indent-guides'
 
+Plugin 'Yggdroot/indentLine'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
