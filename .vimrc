@@ -207,3 +207,16 @@ let g:syntastic_javascript_checkers=['jshint']
 
 filetype indent on
 set smartindent
+
+" vertical highlight
+set nocursorline " horizontal line
+set cursorcolumn " vertical line
+highlight CursorColumn guibg=#101010
+" highlight CursorColumn guibg=#202020
+nmap <leader>c :set cursorcolumn!<CR>
+
+" Hide that ~ for blank line
+" hi CursorColumn term=none cterm=none ctermbg=234
+"au InsertEnter * silent hi CursorColumn term=none cterm=none ctermbg=none
+"au InsertLeave * silent hi CursorColumn term=none cterm=none ctermbg=234
+
