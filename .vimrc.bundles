@@ -31,6 +31,7 @@ Plugin 'vim-scripts/tComment'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'gcmt/taboo.vim'
+Plugin 'vim-ruby/vim-ruby'
 
 " no vim-indent-guides --> doesn't work. manually copy them in
 " Plugin 'nathanaelkane/vim-indent-guides'

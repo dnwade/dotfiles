@@ -58,6 +58,9 @@ augroup vimrcEx
 
   " Automatically wrap at 80 characters for Markdown
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+
+  " ruby
+  autocmd FileType ruby compiler ruby
 augroup END
 
 " Softtabs, 2 spaces
