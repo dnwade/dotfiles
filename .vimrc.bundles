@@ -33,6 +33,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'gcmt/taboo.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
+Plugin 'SirVer/ultisnips'
 
 " no vim-indent-guides --> doesn't work. manually copy them in
 " Plugin 'nathanaelkane/vim-indent-guides'
