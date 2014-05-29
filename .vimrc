@@ -61,6 +61,7 @@ augroup vimrcEx
 
   " ruby
   autocmd FileType ruby compiler ruby
+  autocmd FileType go setlocal ts=8 sw=8
 augroup END
 
 " Softtabs, 2 spaces
