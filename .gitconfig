@@ -55,6 +55,7 @@
 	ba = branch -a
 	bd = branch -d
 	br = branch -r
+  bra = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
 	#############
 	f = fetch
 	fo = fetch origin
@@ -106,6 +107,7 @@
 	meldof = config --remove-section diff
 	#############
 	human = name-rev --name-only --refs=refs/heads/*
+	find-merge-base = "!BASE_FULL_SHA1=$(git merge-base \"$1\" \"$2\");BASE=$(cut -c 1-7 <<< $BASE_FULL_SHA1);REVS_SINCE=$(($(git rev-list \"$1\"...\"$2\" | wc -l | tr -d \" \" ))); git log --pretty=format:\"%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)\" --graph --date=short $1...$2^ | egrep --color=always \"$BASE|$\"; echo \"Merge Base: $BASE_FULL_SHA1\"; echo \"$REVS_SINCE commits between\""
 [color]
   ui = true
   # ui = true
