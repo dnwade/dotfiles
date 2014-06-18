@@ -12,6 +12,8 @@
 [grep]
   linenumber = true
 [alias]
+  id = rev-parse --short HEAD
+  #################
 	s = status
   st = status
 	sb = status -s -b
