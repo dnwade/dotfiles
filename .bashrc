@@ -14,6 +14,8 @@ export PS1
 
 source $HOME/.bash_aliases
 
+export PATH=$PATH/$HOME/local/bin
+
 export DEV=$HOME/dev/CpLnkd3
 
 # boot2docker
