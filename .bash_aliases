@@ -1,3 +1,5 @@
+alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
+
 # alias pt='the_platinum_searcher'
 alias vi='vim'
 
