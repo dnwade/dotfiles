@@ -1,6 +1,7 @@
 # alias pt='the_platinum_searcher'
 alias vi='vim'
 
+alias git='/usr/local/bin/git'
 alias gen_migr='bundle exec rails generate migration'
 
 alias cons='bundle exec rails console'
