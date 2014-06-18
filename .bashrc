@@ -19,6 +19,9 @@ export DEV=$HOME/dev/CpLnkd3
 # boot2docker
 export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 HISTSIZE=5000
 HISTFILESIZE=10000
 shopt -s histappend
