@@ -41,8 +41,6 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-test -f $HOME/.bash_functions && source $HOME/.bash_functions
-
 # nvidia cuda
 export PATH=$PATH:/usr/local/cuda/bin
 
