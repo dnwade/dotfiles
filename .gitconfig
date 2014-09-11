@@ -13,6 +13,8 @@
   linenumber = true
 [alias]
   id = rev-parse --short HEAD
+  # standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since='last saturday' --author dan
+  standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset %d' --since='2014-8-24' --author dan
   #################
 	s = status
   st = status
@@ -30,6 +32,7 @@
 	dc = diff --cached
 	dk = diff --check
 	dck = diff --cached --check
+  diffc = diff --cached
 	#############
 	c = commit
 	ca = commit -a
@@ -56,7 +59,7 @@
 	b = branch
 	ba = branch -a
 	bd = branch -d
-	br = branch -r
+	br = branch
   bra = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
 	#############
 	f = fetch
@@ -130,7 +133,7 @@
 	changed = green
 	untracked = cyan
 [github]
-	user = pkumar
-	token = token
+  #user = pkumar
+  #token = token
 [push]
 	default = simple
