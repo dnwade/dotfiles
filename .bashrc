@@ -25,6 +25,8 @@ export DOCKER_HOST=tcp://192.168.59.103:2375
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+export EDITOR=vim
+
 HISTSIZE=5000
 HISTFILESIZE=10000
 shopt -s histappend
@@ -52,5 +54,6 @@ export SSH_ASKPASS=/usr/libexec/ssh-askpass
 # don't use this with rvm
 # export GEM_HOME="/usr/local"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 source /usr/local/etc/bash_completion.d/password-store
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
