@@ -1,4 +1,10 @@
+alias less='less -i'
+
+alias sha256sum='shasum -a 256'
+
 alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
+
+alias gitbra='for k in `git branch|perl -pe s/^..//`;do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k|head -n 1`\\t$k;done|sort -r'
 
 # alias pt='the_platinum_searcher'
 alias vi='vim'
@@ -13,6 +19,10 @@ alias gen_model='bundle exec rails generate model'
 alias db_migr='bundle exec rake db:migrate'
 alias db_stat='bundle exec rake db:migrate:status'
 alias migrate_status="bundle exec rake db:migrate:status"
+
+alias teaspoon='bundle exec rake teaspoon'
+alias teaspoons='bundle exec rake teaspoon'
+alias tea='bundle exec rake teaspoon'
 
 alias be="bundle exec"
 alias cuc='bundle exec cucumber'
