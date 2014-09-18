@@ -11,6 +11,7 @@
 	autoupdate = 1
 [grep]
   linenumber = true
+	extendRegexp = true
 [alias]
   id = rev-parse --short HEAD
   # standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since='last saturday' --author dan
