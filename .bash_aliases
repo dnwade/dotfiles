@@ -1,5 +1,8 @@
 alias less='less -i'
 
+# http://stackoverflow.com/questions/15292391/is-it-possible-to-perform-a-grep-search-in-all-the-branches-of-git-project
+alias grep_all="git branch -a | tr -d \* | xargs git grep"
+
 alias sha256sum='shasum -a 256'
 
 alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
