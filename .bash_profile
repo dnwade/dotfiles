@@ -8,6 +8,8 @@ export CLICOLOR=1
 export ARCHFLAGS="-arch x86_64"
 export PGPORT=5433
 
+export DEPLOY=$HOME/vagrant/ad-rms__win2012R2/deploy
+
 test -f ~/.bashrc && source ~/.bashrc
 test -f ~/.bash_functions && source ~/.bash_functions
 
@@ -15,6 +17,8 @@ export DOCKER_HOST=localhost
 
 export IMAC=10.32.60.169
 export DEV=$HOME/dev/CpLnkd3
+export SRC=$DEV
+
 set -o vi
 
 export PGDATA=/usr/local/var/postgres
