@@ -34,6 +34,7 @@ Plugin 'gcmt/taboo.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
 Plugin 'SirVer/ultisnips'
+Plugin 'bling/vim-airline'
 
 " no vim-indent-guides --> doesn't work. manually copy them in
 " Plugin 'nathanaelkane/vim-indent-guides'

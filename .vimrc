@@ -244,3 +244,11 @@ au FileType go nmap <leader>t <Plug>(go-test)
 
 " Replace `gd` (Goto Declaration) for the word under your cursor (replaces current buffer):
 au FileType go nmap gd <Plug>(go-def)
+
+" ****** Airline
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
+
