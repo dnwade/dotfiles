@@ -27,7 +27,7 @@ if filereadable(expand("~/.vimrc.bundles"))
 endif
 
 " hack to get plugins to load??
-call vundle#config#require(g:bundles)
+" call vundle#config#require(g:bundles)
 
 filetype plugin on
 
