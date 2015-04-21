@@ -17,7 +17,7 @@ source $HOME/.bash_aliases
 export PATH=$PATH:$HOME/local/bin
 
 export DEV=$HOME/dev/CpLnkd3
-export CDPATH=$DEV/app
+export CDPATH=.:$DEV/app
 
 # boot2docker
 # export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
