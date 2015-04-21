@@ -17,7 +17,7 @@ export DOCKER_HOST=localhost
 
 export IMAC=10.32.60.169
 export DEV=$HOME/dev/CpLnkd3
-export SRC=$DEV
+export SRC=$HOME/dev
 
 set -o vi
 
