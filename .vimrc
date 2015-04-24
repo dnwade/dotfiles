@@ -272,3 +272,9 @@ nmap <leader>bb :CtrlPBuffer<cr>
 nmap <leader>bm :CtrlPMixed<cr>
 nmap <leader>bs :CtrlPMRU<cr>
 
+" prune all trailing space
+" autocmd BufWritePre * :%s/\s\+$//e
+
+" Show trailing whitepace and spaces before a tab:
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
