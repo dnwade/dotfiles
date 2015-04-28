@@ -278,3 +278,8 @@ nmap <leader>bs :CtrlPMRU<cr>
 " Show trailing whitepace and spaces before a tab:
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" tell jslint to accept jsx
+" let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_checkers = ['eslint']
+

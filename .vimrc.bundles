@@ -36,6 +36,7 @@ Plugin 'fatih/vim-go'
 Plugin 'SirVer/ultisnips'
 Plugin 'bling/vim-airline'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'mxw/vim-jsx'
 
 " no vim-indent-guides --> doesn't work. manually copy them in
 " Plugin 'nathanaelkane/vim-indent-guides'
