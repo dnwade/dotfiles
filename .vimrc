@@ -158,8 +158,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
@@ -199,13 +197,15 @@ hi IndentGuidesOdd  ctermbg=black
 " hi IndentGuidesEven ctermbg=darkgrey
 hi IndentGuidesEven ctermbg=lightgrey
 
+
 " syntastic
-let g:syntastic_check_on_open=1
+let g:syntastic_check_on_open=1  " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_auto_loc_list=1
 let g:syntastic_enable_signs=1
 " let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 let g:syntastic_ruby_checkers = ['mri']
 let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_quiet_warnings=1
 
 filetype indent on
 set smartindent
