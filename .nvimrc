@@ -204,6 +204,10 @@ let g:syntastic_enable_signs=1
 " let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 let g:syntastic_ruby_checkers = ['mri']
 let g:syntastic_javascript_checkers=['jshint']
+" Better :sign interface symbols
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+
 
 filetype indent on
 set smartindent
@@ -281,3 +285,4 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 " let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_javascript_checkers = ['eslint']
 
+imap jj <Esc>
