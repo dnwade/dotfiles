@@ -23,7 +23,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 if filereadable(expand("~/.nvimrc.bundles"))
-  source ~/.vimrc.bundles
+  source ~/.nvimrc.bundles
 endif
 
 " hack to get plugins to load??
@@ -209,8 +209,8 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 
 
-filetype indent on
-set smartindent
+filetype plugin indent on
+" set smartindent
 
 " vertical highlight
 set nocursorline " horizontal line
