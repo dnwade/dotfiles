@@ -45,6 +45,8 @@ Plugin 'Yggdroot/indentLine'
 
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'marijnh/tern_for_vim'
+
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
 endif
