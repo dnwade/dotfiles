@@ -17,7 +17,10 @@ source $HOME/.bash_aliases
 export PATH=$PATH:$HOME/local/bin
 
 export DEV=$HOME/dev/CpLnkd3
-export CDPATH=.:$DEV/app
+export CpLnkd3=$DEV
+export CPLNKD3=$DEV
+
+# export CDPATH=.:$DEV
 
 # boot2docker
 # export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
@@ -64,10 +67,20 @@ export MANPATH=$MANPATH:/Library/Frameworks/Mono.framework/Versions/Current/man
 
 export PATH=$PATH:/Library/Frameworks/Mono.framework/Commands
 
-
 # don't use this with rvm
 # export GEM_HOME="/usr/local"
 
+
 source /usr/local/etc/bash_completion.d/password-store
+
+complete -C '/usr/local/aws/bin/aws_completer' aws
+export PATH=/usr/local/aws/bin:$PATH
+
+# for file in $HOME/.bash_completion.d/*; do source $file; done
+source $HOME/.bash_completion.d/git-completion.bash
+
+export PATH=$PATH:/usr/local/opt/coreutils/libexec/gnubin
+
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
