@@ -74,7 +74,7 @@ alias gsl='git stash list'
 alias gss='git stash save'
 
 alias l='ls -1F'
-alias ls='ls -1'
+alias ls='ls -FG'
 alias ll='ls -alFhtr'
 alias la='ls -A'
 
