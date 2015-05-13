@@ -29,7 +29,7 @@ export DOCKER_HOST=tcp://192.168.59.103:2375
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-export EDITOR=vim
+export EDITOR=nvim
 
 HISTSIZE=5000
 HISTFILESIZE=10000
