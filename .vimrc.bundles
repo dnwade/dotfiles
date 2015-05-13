@@ -38,6 +38,7 @@ Plugin 'bling/vim-airline'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'mxw/vim-jsx'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'majutsushi/tagbar'
 
 " no vim-indent-guides --> doesn't work. manually copy them in
 " Plugin 'nathanaelkane/vim-indent-guides'

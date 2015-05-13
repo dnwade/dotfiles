@@ -46,6 +46,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'pangloss/vim-javascript'
 
 Plugin 'marijnh/tern_for_vim'
+Plugin 'majutsushi/tagbar'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
