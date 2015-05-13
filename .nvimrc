@@ -286,3 +286,6 @@ autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 let g:syntastic_javascript_checkers = ['eslint']
 
 imap jj <Esc>
+
+set ignorecase
+set hlsearch
