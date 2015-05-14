@@ -4,6 +4,9 @@
 [core]
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfiles = ~/.gitignore
+[apply]
+  whitespace = fix
 [web]
 	browser = google-chrome
 [rerere]
@@ -114,6 +117,7 @@
 	#############
 	human = name-rev --name-only --refs=refs/heads/*
 	find-merge-base = "!BASE_FULL_SHA1=$(git merge-base \"$1\" \"$2\");BASE=$(cut -c 1-7 <<< $BASE_FULL_SHA1);REVS_SINCE=$(($(git rev-list \"$1\"...\"$2\" | wc -l | tr -d \" \" ))); git log --pretty=format:\"%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(red)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)\" --graph --date=short $1...$2^ | egrep --color=always \"$BASE|$\"; echo \"Merge Base: $BASE_FULL_SHA1\"; echo \"$REVS_SINCE commits between\""
+	unstage = reset HEAD --
 [color]
   ui = true
   # ui = true
@@ -124,7 +128,7 @@
 	local = green bold
 	remote = cyan bold
 [color "diff"]
-	meta = yellow bold
+	meta = bold
 	frag = magenta bold
 	old = red bold
 	new = black green reverse
