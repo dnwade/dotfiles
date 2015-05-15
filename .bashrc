@@ -6,8 +6,23 @@ ulimit -S -n 9999
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
-PS1="\[\e[32m\]\$(parse_git_branch)\[\e[34m\]\h:\W \$ \[\e[m\]"
-export PS1
+# export PS1="\[\e[32m\]\$(parse_git_branch)\[\e[34m\]\h:\W \$ \[\e[m\] 🌀  "
+# export PS1="\[\e[32m\]\$(parse_git_branch)\[\e[34m\]\h:\W  \[\e[m\]🌀  "
+# export PS1="\[$(tput sgr0)\]\033[38;5;15m\033[38;5;86m\A\[$(tput sgr0)\]$(parse_git_branch)\[\e[34m\]"
+# export PS1="\u [\$(total-file-size-curr-dir) bytes]> "
+# export PS1="\[$(tput sgr0)\]\033[38;5;15m\033[38;5;86m\A\[$(tput sgr0)\]\033[38;5;15m\033[38;5;15m\$?\[$(tput sgr0)\]"
+now="$(date +"%I:%M%p")"
+# export PS1="[\$(total-file-size-curr-dir) bytes] [$now] \$(parse_git_branch)> "
+# export PS1="\n\[\e[1;30m\][$$:$PPID - \j:\!\[\e[1;30m\]]\[\e[0;36m\] \T \[\e[1;30m\][\[\e[1;34m\]\u@\H\[\e[1;30m\]:\[\e[0;37m\]${SSH_TTY:-o} \[\e[0;32m\]+${SHLVL}\[\e[1;30m\]] \[\e[1;37m\]\w\[\e[0;37m\] \n\$ "
+
+export sample_emoji=🌀
+
+git_branch='`git rev-parse --abbrev-ref HEAD 2> /dev/null | sed s/^/\ \|\ /`'
+emojis=(🐶 🐺 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐮 🐵 🐼 🐧 🐍 🐢 🐙 🐠 🐳 🐬 🐥)
+emoji='`echo ${emojis[$RANDOM % 22]}`'
+emoji=🌀
+# export PS1="\[\033[0;36m\]\T | \W$git_branch | $emoji  > \[\e[0m\]"
+export PS1="\[\033[0;36m\]\T | \W$git_branch | $emoji  > \[\e[0m\]"
 
 # use bash_profile for go
 #export PATH=$PATH:/usr/local/go/bin
@@ -44,9 +59,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
 export ES_HOME=$HOME/pkg/elasticsearch/elasticsearch-1.2.1
 export PATH=$ES_HOME/bin:$JAVA_HOME/bin:$PATH
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
+#if [ -f ~/.git-completion.bash ]; then
+#  . ~/.git-completion.bash
+#fi
 
 # nvidia cuda
 export PATH=$PATH:/usr/local/cuda/bin
@@ -71,6 +86,10 @@ export PATH=$PATH:/Library/Frameworks/Mono.framework/Commands
 # export GEM_HOME="/usr/local"
 
 
+# source $HOME/.bash_completion.d/*
+# ls -1 $HOME/.bash_completion.d/ | while read file; do
+#  source $j
+#done
 source /usr/local/etc/bash_completion.d/password-store
 
 complete -C '/usr/local/aws/bin/aws_completer' aws
