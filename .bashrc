@@ -102,4 +102,6 @@ export PATH=$PATH:/usr/local/opt/coreutils/libexec/gnubin
 
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
