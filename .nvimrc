@@ -289,3 +289,9 @@ imap jj <Esc>
 
 set ignorecase
 set hlsearch
+
+" http://mirnazim.org/writings/vim-plugins-i-use/
+nnoremap <leader>l :TagbarToggle<CR>
+
+" ctrlp + ctags
+nnoremap <leader>. :CtrlPTag<cr>
