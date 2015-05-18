@@ -75,7 +75,8 @@ alias gss='git stash save'
 
 alias l='ls -1F'
 alias ls='ls -FG'
-alias ll='ls -alFhtr'
+alias ll='ls -alFh'
+alias lla='ls -alFhtr'
 alias la='ls -A'
 
 alias ta='tree' # 'all' tree
